@@ -1,22 +1,32 @@
+import Anchor from '../../Components/atoms/anchor';
+
 export default function Home() {
     return (
         <>
-            <p className="text-3xl font-bold underline">Home</p>
-            <p>
-                Greetings! 👋 I'm [Your Name], a seasoned Fullstack Developer with over 6 years of hands-on experience
-                in crafting robust and scalable solutions.{' '}
-            </p>
-            <p>
-                Throughout my career, I've had the privilege of working on diverse projects that have honed my skills
-                and deepened my understanding of the software development lifecycle. I thrive in dynamic environments
-                and am committed to delivering high-quality, efficient solutions that meet and exceed client
-                expectations.
-            </p>
-            <p>
-                I'm excited about the ever-evolving landscape of technology and the opportunities it presents for
-                creating meaningful and impactful software. Let's connect and explore how my skills and experience can
-                contribute to the success of your next project!
-            </p>
+            <div className="p-3 m-2 bg-gray-500 w-full">
+                <p>Greetings! 👋 I'm Leo Shiu</p>
+                <p>I am a Fullstack Developer with a FE focus</p>
+            </div>
+
+            <div>
+                <Anchor appearAsBtn hrefLoc="#introduction" text="About me" icon="arrow-turn-down" />
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <button>linkedin</button>
+                    </li>
+                    <li>
+                        <button>github</button>
+                    </li>
+                    <li>
+                        <button>email</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="introduction" className="h-3/4">
+                Introduction
+            </div>
         </>
     );
 }

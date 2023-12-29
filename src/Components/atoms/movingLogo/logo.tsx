@@ -5,10 +5,12 @@ const Logo = () => {
     const [cycle, setCycle] = useState(0);
 
     useEffect(() => {
-        wrapperRef.current.dataset.configuration = cycle;
+        const pointerRef = document.getElementById('wrapper');
+
+        pointerRef.dataset.configuration = cycle;
 
         const interval = setInterval(() => {
-            wrapperRef.current.dataset.configuration = cycle + 1;
+            pointerRef.dataset.configuration = cycle + 1;
             setCycle((p) => (p + 1) % 3);
         }, 3000);
         return () => clearInterval(interval);
