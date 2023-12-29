@@ -1,7 +1,10 @@
-import Button from '../atoms/button';
 import CusLink from '../atoms/link';
 
-const MobileMenu = ({ close }) => {
+interface Props {
+    close: () => void;
+}
+
+const MobileMenu = ({ close }: Props) => {
     const menuItems = [
         { title: 'Introduction', location: '/#introduction' },
         { title: 'Projects', location: '/projects' },
