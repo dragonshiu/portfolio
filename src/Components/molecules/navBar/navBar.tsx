@@ -28,7 +28,7 @@ export default function NavBar() {
 
     return (
         <>
-            <header className="md:flex-between header justify-center  border-b-4 border-slate-400 mt-auto flex ">
+            <header className="md:flex-between header justify-center  border-b-4 border-slate-400 flex ">
                 <Link to="/" className="flex-center md:flex-start">
                     <Logo />
                 </Link>

@@ -44,7 +44,7 @@
 
 /* Tailwind Styles */
 .app {
-    @apply w-full relative z-10 flex  items-center flex-col mx-auto;
+    @apply w-full relative z-10 flex items-center flex-col mx-auto min-h-screen;
 }
 /* md:max-w-7xl */
 
