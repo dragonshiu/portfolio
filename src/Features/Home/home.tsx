@@ -7,8 +7,7 @@ export default function Home() {
     return (
         <>
             <QuickIntro />
-            <div>tech stack | icons</div>
-            <Stacks />
+            {/* <Stacks /> */}
             <FullIntro />
             <ProjectCarousel />
         </>
