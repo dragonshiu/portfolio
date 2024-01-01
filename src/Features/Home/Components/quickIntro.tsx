@@ -3,35 +3,33 @@ import Anchor from '../../../Components/atoms/anchor';
 const QuickIntro = () => {
     return (
         <>
-            <div className="border-8 relative px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
-                <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
-                    <div className="max-w-xl mb-6">
-                        <p>Greetings! 👋 I'm Leo Shiu</p>
-                        <p>I am a Fullstack Developer with a FE focus</p>
-                    </div>
+            <div className="w-full pt-16 px-8 pb-12 gap-12 xl:gap-40 md:p-20 flex flex-col md:flex-row flex-center border-b-4 border-slate-400 bg-pattern3">
+                <div className="text-center bg-white rounded-lg border-4 border-b1 py-10 px-4">
+                    <h1 className="font-bold text-3xl font-zilla mx-auto my-4 text-b4">
+                        Greetings!<span className="animate-wiggle inline-block">👋 </span>
+                        I'm <span className="text-b2">Leo Shiu</span>
+                    </h1>
+                    <p className="text-b4 text-xl my-2">
+                        I am a <span className="text-y2 font-bold">Fullstack</span> developer with a{' '}
+                        <span className="text-y2 font-bold">FE</span> focus
+                    </p>
+                    <p className="text-b4 text-lg my-4">
+                        Want to transform your <span className="text-b2 font-bold">idea</span> into a{' '}
+                        <span className="text-b3 font-bold">tangible reality</span>? I am here to help you{' '}
+                        <span className="text-y1 font-bold">achieve your dream</span>!
+                    </p>
+                    <Anchor
+                        appearAsBtn
+                        hrefLoc="#introduction"
+                        text="About me"
+                        icon="arrow-turn-down"
+                        classes="bg-white"
+                        isBlank={false}
+                    />
                 </div>
-                <div className="flex items-center justify-center lg:w-1/2">
-                    <div className="flex w-full relative">
-                        <img src="../../../../assets/images/6840541.png" />
-                    </div>
+                <div className=" flex-col flex-center max-w-1/2 bg-b1 rounded-full border-4 border-b3 overflow-hidden">
+                    <img src="../../../../assets/images/6840541.png" />
                 </div>
-            </div>
-
-            <div>
-                <Anchor appearAsBtn hrefLoc="#introduction" text="About me" icon="arrow-turn-down" />
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <button>linkedin</button>
-                    </li>
-                    <li>
-                        <button>github</button>
-                    </li>
-                    <li>
-                        <button>email</button>
-                    </li>
-                </ul>
             </div>
         </>
     );

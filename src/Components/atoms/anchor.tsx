@@ -7,18 +7,19 @@ interface Props {
     icon?: IconProp;
     appearAsBtn: boolean;
     isBlank?: boolean;
+    classes?: string;
 }
 
-const Anchor = ({ text, hrefLoc, icon, appearAsBtn, isBlank = true }: Props) => {
+const Anchor = ({ text, hrefLoc, icon, appearAsBtn, isBlank = true, classes }: Props) => {
     return (
         <a
             target={isBlank ? '_blank' : '_self'}
             href={hrefLoc}
-            className={
+            className={`${
                 appearAsBtn
-                    ? 'bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded transition-all'
-                    : ''
-            }
+                    ? 'bg-transparent text-b3 font-semibold py-2 px-4 border border-b3 rounded transition-all font-zilla hover:border-transparent hover:text-white hover:bg-b3 '
+                    : ' '
+            } ${classes}`}
         >
             {text} {icon && <FontAwesomeIcon icon={icon} />}
         </a>

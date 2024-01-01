@@ -12,10 +12,10 @@ const MobileMenu = ({ close }: Props) => {
     ];
 
     const classes =
-        'block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent';
+        'block py-4 px-3 text-b3 rounded hover:bg-y1 hover:text-white dark:text-white  dark:hover:bg-gray-700 dark:hover:text-white ';
     return (
-        <div className="absolute left-4 top-28  w-2/3 min-w-72 z-10 border-2 bg-white rounded-lg">
-            <ul className="font-medium flex flex-col p-4 md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <div className="absolute left-4 top-28  w-2/3 min-w-72 z-10  bg-white ">
+            <ul className="font-bold font-philo text-xl flex flex-col p-4 border border-b1 border-4 rounded-lg bg-gray-50 md:flex-row md:p-0 md:mt-0 md:border-0 md:bg-gray-50 md:space-x-8 rtl:space-x-reverse dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 {menuItems.map((i) => {
                     const { title, location } = i;
                     return (

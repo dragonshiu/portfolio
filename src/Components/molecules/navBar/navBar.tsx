@@ -26,6 +26,9 @@ export default function NavBar() {
         setOpen((p) => !p);
     };
 
+    const css =
+        'transition-colors duration-200 ease-in-out rounded-lg p-2 hover:border-2 border-2 hover:border-y3  text-b3 hover:text-y3 border-transparent';
+
     return (
         <>
             <header className="md:flex-between header justify-center  border-b-4 border-slate-400 flex ">
@@ -33,13 +36,13 @@ export default function NavBar() {
                     <Logo />
                 </Link>
                 <nav className="gap-3 md:gap-5 hidden md:flex">
-                    <Link className="font-philo font-bold text-3xl hover:underline" to="/#introduction">
+                    <Link className={`font-philo font-bold text-3xl ${css}`} to="/#introduction">
                         Introduction
                     </Link>
-                    <Link className="font-philo font-bold text-3xl hover:underline" to="/projects">
+                    <Link className={`font-philo font-bold text-3xl ${css}`} to="/projects">
                         Project
                     </Link>
-                    <Link className="font-philo font-bold text-3xl hover:underline" to="/contact-me">
+                    <Link className={`font-philo font-bold text-3xl ${css}`} to="/contact-me">
                         Contact Me
                     </Link>
                 </nav>

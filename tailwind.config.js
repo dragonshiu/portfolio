@@ -9,6 +9,10 @@ export default {
                 philo: ['Philosopher', 'sans-serif'],
                 zilla: ['Zilla Slab', 'sans-serif'],
             },
+            backgroundImage: {
+                pattern2: "url('./assets/background/pattern2.svg')",
+                pattern3: "url('./assets/background/pattern3.svg')",
+            },
             colors: {
                 b1: '#8ecae6',
                 b2: '#219ebc',
@@ -20,15 +24,15 @@ export default {
             },
             keyframes: {
                 wiggle: {
-                    '0%, 100%': { transform: 'rotate(-3deg)' },
-                    '50%': { transform: 'rotate(3deg)' },
+                    '0%, 100%': { transform: 'rotate(-6deg)' },
+                    '50%': { transform: 'rotate(6deg)' },
                 },
                 spin: {
                     '100%': { transform: 'rotateY(360deg)' },
                 },
             },
             animation: {
-                wiggle1: 'wiggle 1s ease-in-out infinite',
+                wiggle: 'wiggle 1s ease-in-out infinite',
                 spin: 'spin 1s linear',
             },
         },
