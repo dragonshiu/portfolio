@@ -10,7 +10,26 @@ export default {
                 zilla: ['Zilla Slab', 'sans-serif'],
             },
             colors: {
-                'primary-orange': '#FF5722',
+                b1: '#8ecae6',
+                b2: '#219ebc',
+                b3: '#126782',
+                b4: '#023047',
+                y1: '#ffb703',
+                y2: '#fd9e02',
+                y3: '#fb8500',
+            },
+            keyframes: {
+                wiggle: {
+                    '0%, 100%': { transform: 'rotate(-3deg)' },
+                    '50%': { transform: 'rotate(3deg)' },
+                },
+                spin: {
+                    '100%': { transform: 'rotateY(360deg)' },
+                },
+            },
+            animation: {
+                wiggle1: 'wiggle 1s ease-in-out infinite',
+                spin: 'spin 1s linear',
             },
         },
     },

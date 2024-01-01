@@ -1,6 +1,7 @@
 import Anchor from '../../Components/atoms/anchor';
 import FullIntro from './Components/fullIntro';
 import ProjectCarousel from './Components/projectCarousel';
+import Stacks from './Components/stacks';
 
 export default function Home() {
     return (
@@ -36,6 +37,7 @@ export default function Home() {
                 </ul>
             </div>
             <div>tech stack | icons</div>
+            <Stacks />
             <FullIntro />
             <ProjectCarousel />
         </>

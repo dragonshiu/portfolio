@@ -116,6 +116,14 @@
     }
 }
 
+/* .flip-icon {
+    @apply block text-center leading-10 w-20 h-20 bg-white rounded-full border-4 overflow-hidden mx-0 my-2;
+}
+
+.rise {
+    @apply before:content-[''] hover:before:content-['']  before:top-full before:h-full before:duration-500 hover:before:top-0 before:bg-slate-500;
+} */
+
 .test {
     color: #8ecae6;
     color: #219ebc;
