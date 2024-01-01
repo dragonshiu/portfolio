@@ -33,13 +33,13 @@ export default function NavBar() {
                     <Logo />
                 </Link>
                 <nav className="gap-3 md:gap-5 hidden md:flex">
-                    <Link className="font-satoshi font-bold" to="/#introduction">
+                    <Link className="font-philo font-bold text-3xl hover:underline" to="/#introduction">
                         Introduction
                     </Link>
-                    <Link className="font-inter font-bold" to="/projects">
+                    <Link className="font-philo font-bold text-3xl hover:underline" to="/projects">
                         Project
                     </Link>
-                    <Link className="font-test font-bold" to="/contact-me">
+                    <Link className="font-philo font-bold text-3xl hover:underline" to="/contact-me">
                         Contact Me
                     </Link>
                 </nav>

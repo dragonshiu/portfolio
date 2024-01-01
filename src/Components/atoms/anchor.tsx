@@ -6,11 +6,13 @@ interface Props {
     hrefLoc: string;
     icon?: IconProp;
     appearAsBtn: boolean;
+    isBlank?: boolean;
 }
 
-const Anchor = ({ text, hrefLoc, icon, appearAsBtn }: Props) => {
+const Anchor = ({ text, hrefLoc, icon, appearAsBtn, isBlank = true }: Props) => {
     return (
         <a
+            target={isBlank ? '_blank' : '_self'}
             href={hrefLoc}
             className={
                 appearAsBtn

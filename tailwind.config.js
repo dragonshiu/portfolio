@@ -6,7 +6,8 @@ export default {
             fontFamily: {
                 satoshi: ['Satoshi', 'sans-serif'],
                 inter: ['Inter', 'sans-serif'],
-                test: ['Rubik Scribble', 'sans-serif'],
+                philo: ['Philosopher', 'sans-serif'],
+                zilla: ['Zilla Slab', 'sans-serif'],
             },
             colors: {
                 'primary-orange': '#FF5722',
