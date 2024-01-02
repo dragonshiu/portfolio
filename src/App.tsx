@@ -14,6 +14,13 @@ import ScrollTop from './Components/molecules/scrollTop';
 library.add(fab, fas);
 
 // todo: maybe add a color diff on tabs based on router location
+// consolidate font classes
+//add a real profile pic?
+//maybe change footer bg?
+//maybe change contact me bg
+// update icon colors?
+//add scroll to top behavior on link change https://www.matthewhoelter.com/2022/04/02/how-to-scroll-to-top-on-route-change-with-react-router-dom-v6.html
+
 function App() {
     return (
         <>
