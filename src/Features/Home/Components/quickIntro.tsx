@@ -3,7 +3,7 @@ import Anchor from '../../../Components/atoms/anchor';
 const QuickIntro = () => {
     return (
         <>
-            <div className="w-full pt-16 px-8 pb-12 gap-12 xl:gap-40 md:p-20 flex flex-col-reverse md:flex-row flex-center border-b-4 border-slate-400 bg-pattern3">
+            <div className="w-screen pt-16 px-8 pb-12 gap-12 xl:gap-40 md:p-20 flex flex-col-reverse md:flex-row flex-center border-b-4 border-slate-400 bg-pattern3">
                 <div className="text-center bg-white rounded-lg border-4 border-b1 py-10 px-4">
                     <h1 className="font-bold text-3xl font-zilla mx-auto my-4 text-b4">
                         Greetings!<span className="animate-wiggle inline-block">👋 </span>
