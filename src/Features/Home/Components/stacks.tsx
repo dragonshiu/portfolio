@@ -1,7 +1,7 @@
 // import FlipIcon from '../../../Components/atoms/flipIcon/flipIcon';
 
 const Stacks = () => {
-    const listOfStacks = [{ name: '', icon: '' }];
+    // const listOfStacks = [{ name: '', icon: '' }];
     return (
         <div>
             <ul></ul>

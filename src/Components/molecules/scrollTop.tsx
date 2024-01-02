@@ -5,7 +5,7 @@ const ScrollTop = () => {
     const [y, setY] = useState(window.scrollY);
 
     useEffect(() => {
-        const handler = (e: Event) => {
+        const handler = (_e: Event) => {
             setY(window.scrollY);
         };
 
