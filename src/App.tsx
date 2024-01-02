@@ -9,9 +9,11 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import Projects from './Features/Projects/projects';
 import ContactMe from './Features/ContactMe/contactMe';
 import Footer from './Components/molecules/footer';
+import ScrollTop from './Components/molecules/scrollTop';
 
 library.add(fab, fas);
 
+// todo: maybe add a color diff on tabs based on router location
 function App() {
     return (
         <>
@@ -27,7 +29,7 @@ function App() {
                             <Route path="*" element={<>Not Found</>} />
                         </Routes>
                     </div>
-
+                    <ScrollTop />
                     <Footer />
                 </ErrorBoundaryClass>
             </div>
