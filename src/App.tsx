@@ -19,7 +19,7 @@ function App() {
             <div className="app">
                 <ErrorBoundaryClass>
                     <NavBar />
-                    <div className="flex-grow">
+                    <div className="flex-grow w-full">
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/projects" element={<Projects />} />

@@ -2,9 +2,9 @@ const FullIntro = () => {
     return (
         <div
             id="introduction"
-            className="w-screen pt-16 px-8 pb-12 flex-center md:p-20 border-b-4 border-slate-400 bg-b4 text-b1"
+            className="w-full pt-16 px-8 pb-12 flex-center md:p-20 border-b-4 border-slate-400 bg-b4 text-b1"
         >
-            <div className="flex flex-col xl:flex-row-reverse  gap-12 xl:gap-40 max-w-screen-2xl">
+            <div className="flex flex-col xl:flex-row-reverse  gap-12 xl:gap-40 max-w-full-2xl">
                 <div className="text-center bg-white rounded-lg border-4 border-b1 py-10 px-4 flex-1 ">
                     <h2 className="font-bold text-3xl font-zilla mx-auto my-4 text-b4">About me</h2>
                     <p className="text-b4 text-lg my-4 text-left">
