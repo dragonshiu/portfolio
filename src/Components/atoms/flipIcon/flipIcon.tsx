@@ -1,13 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './flipIcon.css';
+import { IconName } from '@fortawesome/fontawesome-svg-core';
 
-const FlipIcon = () => {
+interface Props {
+    icon: IconName;
+}
+
+const FlipIcon = ({ icon }: Props) => {
     return (
         <div>
             <ul className="c-ul">
                 <li className="c-li">
                     <a href="#" className="c-a">
-                        <FontAwesomeIcon icon={{ prefix: 'fab', iconName: 'linkedin' }} className="icon" size="2x" />
+                        <FontAwesomeIcon icon={{ prefix: 'fab', iconName: icon }} className="icon" size="2x" />
                     </a>
                 </li>
             </ul>
